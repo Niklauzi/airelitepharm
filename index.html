@@ -5,44 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AirelitePharm</title>
     <style>
-      body,
-      html {
+      * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
         height: 100%;
-        overflow: hidden;
-      }
-      .background-container {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-      }
-      .background-image {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
+        font-family: Arial, sans-serif;
       }
-      footer {
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
+
+      body {
+        background-image: url('/images/airelite.jpg'); /* Replace with your image path or URL */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         color: #fff;
-        font-size: 14px;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-        z-index: 10;
+      }
+
+      .content {
+        /* background-color: rgba(0, 0, 0, 0.4); /* Optional: for readability */
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
         padding: 10px 0;
+        font-size: 0.9rem;
       }
     </style>
   </head>
   <body>
-    <div class="background-container">
-      <img class="background-image" src="/images/airelite.jpg" alt="My Image" />
-      <footer>&copy; 2025 - AirelitePharm</footer>
+    <div class="content">
+      <div class="title">AirelitePharm</div>
+      <div class="subtitle">Coming soon......</div>
     </div>
+
+    <footer>© 2025 - AirelitePharm</footer>
   </body>
 </html>
